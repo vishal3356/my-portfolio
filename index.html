@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Vishal Jaat</h1>
+      <p>PHP Web Developer | Problem Solver | Tech Enthusiast | Laravel Professional</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>A motivated and technically adept individual seeking to contribute to organizational growth through the application of strong technical knowledge and problem-solving abilities. Eager to work in dynamic and challenging environments that foster continuous learning and professional development.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div><i class="fas fa-code"></i> PHP</div>
+        <div><i class="fab fa-js"></i> JavaScript</div>
+        <div><i class="fab fa-laravel"></i> Laravel</div>
+        <div><i class="fas fa-database"></i> MySQL</div>
+        <div><i class="fab fa-git"></i> Git</div>
+        <div><i class="fab fa-wordpress"></i> WordPress</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Netmente – PHP Web Developer</h3>
+          <p>Sep 2024 – Present</p>
+        </div>
+        <div class="timeline-item">
+          <h3>iTechVision – PHP Web Developer</h3>
+          <p>Feb 2022 – Sep 2024</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Univisionz – PHP Developer</h3>
+          <p>Feb 2021 – Feb 2022</p>
+        </div>
+        <div class="timeline-item">
+          <h3>CS Infotech (Chandigarh) – Intern</h3>
+          <p>Aug 2020 – Jan 2021</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>URAwarrior – Social Challenge Platform</h3>
+        <p>Tech Stack: Laravel 8, REST APIs</p>
+        <p>Description: A social media-style mobile and web platform where users participate in 365-day challenges.</p>
+        <p>Responsibilities: Developed a complete admin backend, built secure RESTful APIs, collaborated with the mobile team.</p>
+        <a href="#">🌐 Website</a> | <a href="#">📱 App Store</a> | <a href="#">Play Store</a>
+      </div>
+      <div class="project">
+        <h3>Wows Global – Digital Shareholding Platform</h3>
+        <p>Tech Stack: Core PHP, WordPress, CodeIgniter</p>
+        <p>Description: A large-scale finance and investment platform allowing companies to manage shares online.</p>
+        <p>Responsibilities: Developed modules for user registration and share transactions, ensured data security.</p>
+        <a href="#">🌐 Website</a>
+      </div>
+      <div class="project">
+        <h3>Bizlx – Local Business Directory Platform</h3>
+        <p>Tech Stack: Laravel 8, Vue.js</p>
+        <p>Description: A service-based platform allowing local businesses to register and showcase their services.</p>
+        <p>Responsibilities: Designed REST APIs, developed an admin dashboard, managed ongoing development.</p>
+        <a href="#">🌐 Website</a>
+      </div>
+      <div class="project">
+        <h3>Custom Parts – Japanese Automotive Marketplace</h3>
+        <p>Tech Stack: Laravel 8</p>
+        <p>Description: A web application for buying and selling custom vehicle parts.</p>
+        <p>Responsibilities: Coordinated with clients, created backend systems for inventory management.</p>
+        <a href="#">🛠️ Admin Panel</a> | <a href="#">🚗 Frontend</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <p>B.Sc. (Computer Science) – Mukand Lal National College, KUK University, 60%</p>
+      <p>12th (Science) – Arya Sr. Sec. School, Naraingarh, 75%</p>
+      <p>10th – New Adarsh Sr. Sec. School, 79%</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:jaatvishal03@gmail.com">jaatvishal03@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919729523356">+91 97295 23356</a></p>
+      <p>Location: Village Lakhnoura, Ambala, Haryana</p>
+      <a href="path/to/your/resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Vishal. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
