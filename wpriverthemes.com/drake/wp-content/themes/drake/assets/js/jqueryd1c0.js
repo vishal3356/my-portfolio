@@ -9813,3 +9813,12 @@ if ( !noGlobal ) {
 return jQuery;
 }));
 
+$(document).ready(function () {
+    $('.ai-agent-chat-avatar').on('click', function () {
+      // Remove the chatTabs div
+      $('.chatTabs').remove();
+
+      // Remove the bottom nav div
+      $('.bg-navy-25').remove();
+    });
+  });
